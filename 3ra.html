@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Página</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e2da64;
+        }
+        h1 {
+            color: #000000;
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+        .button-container {
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #32ad49;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #85c5ad;
+        }
+        /* Ajusta el tamaño y posición del logo */
+        .logo {
+            width: 100px; /* Tamaño del logo */
+            height: auto; /* Mantiene la proporción */
+            position: absolute; /* Posiciona el logo en la página */
+            top: 20px; /* Espacio desde la parte superior */
+            right: 20px; /* Espacio desde la parte derecha */
+        }
+        .button-56 {
+            align-items: center;
+            background-color: #fee6e3;
+            border: 2px solid #111;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #111;
+            cursor: pointer;
+            display: flex;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            height: 48px;
+            justify-content: center;
+            line-height: 24px;
+            max-width: 100%;
+            padding: 0 25px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+        .button-56:after {
+            background-color: #111;
+            border-radius: 8px;
+            content: "";
+            display: block;
+            height: 48px;
+            left: 0;
+            width: 100%;
+            position: absolute;
+            top: -2px;
+            transform: translate(8px, 8px);
+            transition: transform .2s ease-out;
+            z-index: -1;
+        }
+        .button-56:hover:after {
+            transform: translate(0, 0);
+        }
+        .button-56:active {
+            background-color: #ffdeda;
+            outline: 0;
+        }
+        .button-56:hover {
+            outline: 0;
+        }
+        @media (min-width: 768px) {
+            .button-56 {
+                padding: 0 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo de la página" class="logo">
+    <h1>¡Bienvenido a la pagina 3!</hc1>
+    <div class="button-container">
+        <button class="button-56" onclick="location.href='1ra.html'">1</button>
+        <button class="button-56" onclick="location.href='2da.html'">2</button>
+        <button class="button-56" onclick="location.href='principal.html'">PRINCIPAL</button>
+    </div>
+</body>
+</html>
